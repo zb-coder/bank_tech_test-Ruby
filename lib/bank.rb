@@ -8,4 +8,8 @@ class Bank
   def credit(amount)
     @balance += amount
   end
+
+  def debit(amount)
+    
+  end
 end
