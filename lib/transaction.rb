@@ -5,4 +5,8 @@ class Transaction
     @transactions = []
   end
 
+  def credit(amount)
+    @transactions << amount
+  end
+
 end
