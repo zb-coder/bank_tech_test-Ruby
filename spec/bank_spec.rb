@@ -10,6 +10,11 @@ describe '#deposit' do
   it 'takes an argument' do
     expect(subject).to respond_to(:deposit).with(1).argument 
   end
+
+  it 'allows a deposit to be made' do
+    expect{subject.deposit 1}.to change{subject.balance}.by 1
+  end
+
 end
 
 end
