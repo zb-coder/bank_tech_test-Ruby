@@ -6,6 +6,6 @@ class Bank
   end
 
   def deposit(amount)
-    @balance = @balance + amount
+    @balance += amount
   end
 end
