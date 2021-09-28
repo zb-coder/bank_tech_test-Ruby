@@ -9,4 +9,7 @@ class Transaction
     @transactions << amount
   end
 
+  def debit(amount)
+    @transactions << amount
+  end
 end
