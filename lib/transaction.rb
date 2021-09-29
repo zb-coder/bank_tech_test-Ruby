@@ -1,6 +1,6 @@
 class Transaction
 
-  attr_reader :transactions
+  attr_reader :transactions 
   def initialize
     @transactions = []
   end
