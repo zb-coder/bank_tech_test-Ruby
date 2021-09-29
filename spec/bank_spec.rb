@@ -34,6 +34,18 @@ describe Bank do
           bank.debit('14/01/2023', 500)
           expect(bank.balance).to eq(-500)
         end
-      end
-    end
+      
+        describe '#print_sorted_array_with_header' do
+          it 'prints the bank statement' do
+            bank.credit('10/01/2023', 1000)
+            bank.credit('13/01/2023', 2000)
+            bank.debit('14/01/2023', 500)
+              expect(bank.print_sorted_array_with_header).to eq(
+                ["14/01/2023 ||      ||  500  || 2500",
+                 "13/01/2023 || 2000 ||       || 3000",
+                 "10/01/2023 || 1000 ||       || 1000"])
+            end
+          end
+        end
+  end
 end
