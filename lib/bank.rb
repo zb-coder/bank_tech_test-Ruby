@@ -1,9 +1,12 @@
+require './lib/statement'
+
 class Bank
 
   attr_reader :balance, :transactions
-  def initialize
+  def initialize(statement = Statement.new)
     @balance = 0
     @transactions = []
+    @statement = statement
   end
 
   def credit(date, amount)
@@ -17,6 +20,7 @@ class Bank
   end
 
   def print_sorted_array_with_header
+    @statement.statement_header
     sorted_array = transactions
     sorted_array.reverse.each do
       |i| puts i
