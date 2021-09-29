@@ -8,9 +8,11 @@ class Bank
 
   def credit(date, amount)
     @balance += amount
+    transactions << "#{date} || #{amount} || || #{balance}"
   end
 
   def debit(date, amount)
     @balance -= amount
+    transactions << "#{date} || || #{amount} || #{balance}"
   end
 end
