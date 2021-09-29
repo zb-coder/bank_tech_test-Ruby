@@ -20,9 +20,9 @@ describe Bank do
       end
 
       it 'allows a credit of 3000 to be made on ' do
-        bank.credit('10/01/2023', 1000)
-        bank.credit('13/01/2023', 2000)
-        expect(bank.balance).to eq(3000)
+        bank.credit('10/01/2023', 1000.00)
+        bank.credit('13/01/2023', 2000.00)
+        expect(bank.balance).to eq(3000.00)
       end
 
       describe '#debit' do
@@ -31,19 +31,19 @@ describe Bank do
         end
 
         it 'allows a debit 500 to be made' do
-          bank.debit('14/01/2023', 500)
-          expect(bank.balance).to eq(-500)
+          bank.debit('14/01/2023', 500.00)
+          expect(bank.balance).to eq(-500.00)
         end
       
         describe '#print_sorted_array_with_header' do
           it 'prints the bank statement' do
-            bank.credit('10/01/2023', 1000)
-            bank.credit('13/01/2023', 2000)
-            bank.debit('14/01/2023', 500)
+            bank.credit('10/01/2023', 1000.00)
+            bank.credit('13/01/2023', 2000.00)
+            bank.debit('14/01/2023', 500.00)
               expect(bank.print_sorted_array_with_header).to eq(
-                ["14/01/2023 ||      ||  500  || 2500",
-                 "13/01/2023 || 2000 ||       || 3000",
-                 "10/01/2023 || 1000 ||       || 1000"])
+                ["14/01/2023 ||        || 500.0 || 2500.0",
+                  "13/01/2023 || 2000.0 ||       || 3000.0",
+                  "10/01/2023 || 1000.0 ||       || 1000.0"])
             end
           end
         end

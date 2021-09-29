@@ -16,20 +16,19 @@ class Bank
 
   def debit(date, amount)
     @balance -= amount
-    transactions << "#{date} ||      ||  #{amount}  || #{balance}"
+    transactions << "#{date} ||        || #{amount} || #{balance}"
   end
 
   def print_sorted_array_with_header
     @statement.statement_header
-    sorted_array = transactions
-    sorted_array.reverse.each do
-      |i| puts i
+    sored_array = transactions.reverse.each do
+      |i| i
     end
   end
 end
 
 account = Bank.new
-account.credit('10/01/2023', 1000)
-account.credit('13/01/2023', 2000)
-account.debit('14/01/2023', 500)
+account.credit('10/01/2023', 1000.00)
+account.credit('13/01/2023', 2000.00)
+account.debit('14/01/2023', 500.00)
 puts account.print_sorted_array_with_header
