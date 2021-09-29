@@ -6,11 +6,11 @@ class Bank
     @transactions = []
   end
 
-  def credit(amount)
+  def credit(date, amount)
     @balance += amount
   end
 
-  def debit(amount)
+  def debit(date, amount)
     @balance -= amount
   end
 end
