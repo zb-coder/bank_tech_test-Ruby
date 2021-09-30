@@ -75,7 +75,7 @@ so that I can see all my previous credits, debits and balances on each day
 
 ## Screenshot of app
 ![](images/irb%20image.png)
-```
+
 To use the app you can either put the lines 30 - 34 
 
 ```
@@ -90,6 +90,6 @@ account.debit('14/01/2023', 500.00)
 puts account.print_sorted_array_with_header
 ```
 
-and put ruby bank.rb into the console shown in the image above or you can use irb as shown in the image below.
+and put ruby bank.rb into the console as shown in the image above or you can use irb as shown in the image below.
 
 ![](images/ruby%20image.png)
