@@ -79,11 +79,15 @@ so that I can see all my previous credits, debits and balances on each day
 To use the app you can either put the lines 30 - 34 
 ```
 account = Bank.new
+
 account.credit('10/01/2023', 1000.00)
+
 account.credit('13/01/2023', 2000.00)
+
 account.debit('14/01/2023', 500.00)
+
 puts account.print_sorted_array_with_header
 ```
 and put ```ruby bank.rb ``` into the console shown in the image above or you can use irb as shown in the image below.
-```
-![](images/ruby%20lib/bank.rb%20image)
+
+![](images/ruby%20lib:bank.rb%20image)
