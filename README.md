@@ -90,6 +90,6 @@ account.debit('14/01/2023', 500.00)
 puts account.print_sorted_array_with_header
 ```
 
-and put ```ruby bank.rb ``` into the console shown in the image above or you can use irb as shown in the image below.
+and put ruby bank.rb into the console shown in the image above or you can use irb as shown in the image below.
 
 ![](images/ruby%20image.png)
