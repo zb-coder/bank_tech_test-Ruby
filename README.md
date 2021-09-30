@@ -92,4 +92,4 @@ puts account.print_sorted_array_with_header
 
 and put ```ruby bank.rb ``` into the console shown in the image above or you can use irb as shown in the image below.
 
-![](images/ruby%20lib:bank.rb%20image.png)
+![](images/ruby%20image.png)
