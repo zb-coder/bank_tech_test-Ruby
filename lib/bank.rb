@@ -11,17 +11,17 @@ class Bank
 
   def credit(date, amount)
     @balance += amount
-    transactions << "#{date} || #{amount} ||       || #{balance}"
+    transactions << "#{date} ||#{amount}0 ||       || #{balance}0"
   end
 
   def debit(date, amount)
     @balance -= amount
-    transactions << "#{date} ||        || #{amount} || #{balance}"
+    transactions << "#{date} ||        ||#{amount}0 || #{balance}0"
   end
 
   def print_sorted_array_with_header
     @statement.statement_header
-    sored_array = transactions.reverse.each do
+    transactions.reverse.each do
       |i| i
     end
   end

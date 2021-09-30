@@ -46,3 +46,21 @@ As a User
 I would like to print a bank statement
 so that I can see all my previous credits, debits and balances on each day
 ```
+## How to use the app
+
+```
+clone the repo
+bundle install
+require './lib/bank.rb'
+account = Bank.new
+account.credit('10/01/2023', 1000.00)
+account.credit('13/01/2023', 2000.00)
+account.debit('14/01/2023', 500.00)
+puts account.print_sorted_array_with_header
+```
+
+## How to check tests
+```
+bundle install
+rspec
+```
