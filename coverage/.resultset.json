@@ -64,34 +64,28 @@
           null,
           1,
           1,
-          8,
-          8,
-          8,
+          7,
+          7,
+          7,
           null,
           null,
           1,
-          6,
-          6,
-          null,
-          null,
-          1,
-          3,
-          3,
+          4,
+          4,
           null,
           null,
           1,
           2,
           2,
-          6,
-          null,
-          null,
           null,
           null,
           1,
           1,
           1,
-          1,
-          1
+          3,
+          null,
+          null,
+          null
         ]
       },
       "/Users/zainabbaruud/Projects/bank_tech_test-Ruby/lib/statement.rb": {
@@ -99,7 +93,7 @@
           1,
           null,
           1,
-          3,
+          2,
           null,
           null,
           null
@@ -118,6 +112,6 @@
         ]
       }
     },
-    "timestamp": 1632991114
+    "timestamp": 1633001215
   }
 }

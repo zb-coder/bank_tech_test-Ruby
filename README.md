@@ -1,6 +1,32 @@
 # bank_tech_test-Ruby
 
+## How to use the app
+
+```
+clone the repo
+bundle install
+require './lib/bank.rb'
+account = Bank.new
+account.credit('10/01/2023', 1000.00)
+account.credit('13/01/2023', 2000.00)
+account.debit('14/01/2023', 500.00)
+puts account.print_sorted_array_with_header
+```
+
+## How to run tests
+```
+bundle install
+rspec
+```
 ## Specification
+
+## How I approached the task
+
+Initially I did not have a plan, I just wanted to be able to print the total balance and kind of did not follow the specification and had too many classes that did not make sense. However, I then started again, not from scratch as I kept my credit and debit methods. I added date and amount to both the credit and debit methods so the user can input both. I also added a transaction array to push that information to along with the balance.
+
+In a separate statement class, I hard coded a header and used that in the bank class. I created a method that displays the transactions in reverse order which incorporates the hardcoded header from the statement class. 
+
+In the future I would start off by planning and not just trying to do it.
 
 ### Requirements
 
@@ -46,21 +72,18 @@ As a User
 I would like to print a bank statement
 so that I can see all my previous credits, debits and balances on each day
 ```
-## How to use the app
 
+## Screenshot of app
+![](images/irb%20image.png)
 ```
-clone the repo
-bundle install
-require './lib/bank.rb'
+To use the app you can either put the lines 30 - 34 
+```
 account = Bank.new
 account.credit('10/01/2023', 1000.00)
 account.credit('13/01/2023', 2000.00)
 account.debit('14/01/2023', 500.00)
 puts account.print_sorted_array_with_header
 ```
-
-## How to check tests
+and put ```ruby bank.rb ``` into the console shown in the image above or you can use irb as shown in the image below.
 ```
-bundle install
-rspec
-```
+![](images/ruby%20lib/bank.rb%20image)
